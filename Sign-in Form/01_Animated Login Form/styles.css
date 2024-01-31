@@ -20,28 +20,29 @@ body {
 
 form {
     display: block;
-    background-color: blueviolet;
+    background-color:transparent;
+    backdrop-filter: blur(20px);
     width: 30%;
     margin: auto;
     padding: 0;
     justify-content: center;
     align-items: center;
-    border: 2px #fff solid;
+    border: 1.3px #fff solid;
     border-radius: 20px;
+    height: 30rem;
 }
 
 form h3 {
     text-align: center;
     font-size: 35px;
-    font-weight: 400;
-    color: #fff;
+    font-weight: 500;
+    color: #051f20;
     height: 5rem;
     margin-top: 2rem;
 }
 
 /* input 1 */
 form .input1 {
-    border: 2px solid #555;
     width: 80%;
     margin: auto; 
     padding: 0;
@@ -50,21 +51,27 @@ form .input1 {
 form .input1 p{
     color: #fff;
     font-weight: 300;
-    font-size: 18px;
+    font-size: 15px;
 }
 
 form .input1 input {
     width: 100%;
-    height: 2rem;
-    border: none;
+    border-bottom: 1.3px #fff solid;
     background: transparent;
     outline: none;
     color: #fff;
+    height: 0;
 }
+
+form .input1 input:hover {
+    height: 2rem;
+    transition: 0.5s;
+    outline: none;
+}
+
 
 /* input 2 */
 form .input2 {
-    border: 2px solid #fff;
     width: 80%;
     margin: auto; 
     padding: 0;
@@ -74,23 +81,27 @@ form .input2 {
 form .input2 p{
     color: #fff;
     font-weight: 300;
-    font-size: 18px;
+    font-size: 15px;
 }
 
 form .input2 input {
     width: 100%;
-    height: 2rem;
-    border: none;
+    height: 0;
     background: transparent;
     outline: none;
     color: #fff;
+    border-bottom: 1.3px #fff solid;
+}
 
+form .input2 input:hover {
+    height: 2rem;
+    transition: 0.5s;
+    outline: none;
 }
 
 /* Remember Area */
 form .re {
     display: flex;
-    border: 2px #fff solid;
     justify-content: center;
     align-items: center;
     width: 80%;
@@ -99,6 +110,8 @@ form .re {
     margin-top: 1rem;
 }
 
+
+
 form .re p {
     display: flex;
     color: #fff;
@@ -106,6 +119,7 @@ form .re p {
     margin: 0;
     padding: 0;
     margin-left: 0.5rem;
+    font-weight: 300;
 }
 
 
@@ -114,24 +128,37 @@ form .re a {
     text-decoration: none;
     font-size: 15px;
     margin-left: 3rem;
+    font-weight: 300;
+}
+
+form .re a:hover {
+    text-decoration: underline;
+    transition: 0.4s;
 }
 
 form .button {
-    border: 2px #555 solid;
     margin: auto; 
     padding: 0;
-    width: 80%;
+    width: 50%;
     margin-top: 1rem;
 }
 
 form button {
-    height: 2rem;
-    background-color: orangered;
+    height: 2.5rem;
+    background-color: #fff;
     font-size: 18px;
     border: none;
     cursor: pointer;
-    color: #fff;
+    color: black;
     width: 100%;
+    font-weight: 300;
+}
+
+form button:hover {
+    background: transparent;
+    color: #fff;
+    border: 1.3px #fff solid;
+    transition: 0.7s;
 }
 
 form .last-p {
