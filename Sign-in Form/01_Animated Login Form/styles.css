@@ -57,6 +57,9 @@ form .input1 input {
     width: 100%;
     height: 2rem;
     border: none;
+    background: transparent;
+    outline: none;
+    color: #fff;
 }
 
 /* input 2 */
@@ -65,6 +68,7 @@ form .input2 {
     width: 80%;
     margin: auto; 
     padding: 0;
+    margin-top: 1rem;
 }
 
 form .input2 p{
@@ -77,6 +81,10 @@ form .input2 input {
     width: 100%;
     height: 2rem;
     border: none;
+    background: transparent;
+    outline: none;
+    color: #fff;
+
 }
 
 /* Remember Area */
@@ -88,6 +96,7 @@ form .re {
     width: 80%;
     margin: auto; 
     padding: 0;
+    margin-top: 1rem;
 }
 
 form .re p {
@@ -96,6 +105,7 @@ form .re p {
     font-size: 15px;
     margin: 0;
     padding: 0;
+    margin-left: 0.5rem;
 }
 
 
@@ -103,17 +113,25 @@ form .re a {
     color: #fff;
     text-decoration: none;
     font-size: 15px;
+    margin-left: 3rem;
+}
+
+form .button {
+    border: 2px #555 solid;
+    margin: auto; 
+    padding: 0;
+    width: 80%;
+    margin-top: 1rem;
 }
 
 form button {
-    width: 80%;
     height: 2rem;
     background-color: orangered;
     font-size: 18px;
     border: none;
     cursor: pointer;
     color: #fff;
-    margin: auto;
+    width: 100%;
 }
 
 form .last-p {
@@ -121,6 +139,8 @@ form .last-p {
     font-size: 18px;
     font-weight: 300;
     text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
 }
 
 form .last-p a {
@@ -130,5 +150,4 @@ form .last-p a {
     font-weight: 300;
     margin-left: 0.3rem;
 }
-
 
