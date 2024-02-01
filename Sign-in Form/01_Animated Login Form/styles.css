@@ -45,54 +45,89 @@ form h3 {
 form .input1 {
     display: flex;
     width: 80%;
+    height: 5rem;
     margin: auto; 
-    padding: 0;
-    background-color: aquamarine;
+    background:none;
     align-items: center;
+    border: 1px #fff solid;
 }
 
 form .input1 i {
     position: absolute;
-    color: #051f20;
-
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
 }
+
 form .input1 p{
     position: absolute;
     color: black;
     font-weight: 300;
     font-size: 15px;
+    margin-left: 1.5rem;
 }
+
+form .input1 p:hover {
+    top: 5rem;
+    font-size: 12px;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
 
 form .input1 input {
     width: 80%;
     background: #fff;
-    color: #fff;
+    color: #051f20;
     outline: none;
     height: 2rem;
+    margin-left: 1.5rem;
 }
 
 /* input 2 */
 form .input2 {
+    display: flex;
     width: 80%;
     margin: auto; 
     padding: 0;
-    margin-top: 1rem;
-    background-color: aqua;
+    background: none;
+    align-items: center;
+}
+
+form .input2 i {
+    position: absolute;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+form .input2 .eye {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+form .input2 .eye i {
+    color: #fff;
+    font-size: 18px;
 }
 
 form .input2 p{
-    color: #fff;
+    position: absolute;
+    color: black;
     font-weight: 300;
     font-size: 15px;
+    margin-left: 1.5rem;
 }
 
 form .input2 input {
     width: 80%;
     background: #fff;
-    outline: none;
     color: #fff;
-    border-bottom: 2px #fff solid;
+    outline: none;
     height: 2rem;
+    margin-left: 1.5rem;
 }
 
 /* Remember Area */
