@@ -131,21 +131,12 @@ header nav a:hover {
     transition: 0.4s;
 }
 
-.left button .arrow {
-    display: none;
-    width: 25px;
-    height: 25px;
-}
-
-.left button .arrow:hover {
-    display: block;
-}
-
 .left button:hover {
-    width: 15rem;
+    width: 12rem;
+    height: 2.5rem;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 
@@ -170,3 +161,44 @@ footer i:hover {
     transition: 0.4s;
     color: #ff3527;
 }
+
+@media only screen and (max-width: 700px) {
+
+    header nav{
+        width: 20%;
+        right: 7rem;
+    }
+
+    .content {
+      display: block;
+      position: relative;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .content .left {
+        position: absolute;
+        width: 90%;
+        z-index: 0;
+        top: 26rem;
+        left: 1rem;   
+    }
+
+    .content .right {
+        position: absolute;
+        width: 90%;
+        z-index: 2;
+        height: 20rem;
+    }
+
+    .content .right img{
+        width: 70%;
+    }
+
+    footer {
+        position: relative;
+        top: 20rem;
+    }
+
+  }
+    
