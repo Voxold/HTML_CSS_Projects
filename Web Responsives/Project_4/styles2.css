@@ -13,7 +13,7 @@ body {
     align-items: center;
     height: 9rem;
     color: #fff;
-    background-color: #0E0C0A ;
+    background-color: #000000 ;
 }
 
 .header a img {
@@ -120,23 +120,177 @@ body {
 .main-2 {
     display: block;
     width: 100%;
-    height: 800px;
+    height: 600px;
     color: #fff;
     background: #0E0C0A;
     background-size: cover;
     border: 2px #fff solid;
 }
 
+.main-2 .main-2-top {
+    text-align: center;
+    font-size: 25px;
+    font-family: roboto , sans-serif;
+    font-weight: 400;
+}
+
+.main-2 .main-2-top span {
+    color: orangered;
+}
+
+.main-2 .main-2-buttom {
+    display: flex;
+    justify-content: center;
+}
+
+.main-2 .main-2-buttom img{
+    border-radius: 20px;
+}
+
+.main-2 .main-2-buttom .main-2-buttom-content{
+    position: relative;
+    left: 2rem;
+}
+
+.main-2 .main-2-buttom .main-2-buttom-content h3 {
+    font-family: roboto , sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    color: orangered;
+}
+
+.main-2 .main-2-buttom .main-2-buttom-content p {
+    font-size: 16px;
+    font-family: Roboto Slab, sans-serif;
+    width: 80%;
+}
+
+.main-2 .main-2-buttom .main-2-buttom-content button {
+    position: relative;
+    top: 1.5rem;
+    position: relative;
+    border: none;
+    border-radius: 1px;
+    width: 30%;
+    height:40px;
+    font-size: 18px;
+    font-family: Roboto;
+    background: orangered;
+    color: #fff;
+    transition: 0.4s;
+}
+
+.main-2 .main-2-buttom .main-2-buttom-content button:hover{
+    background: transparent;
+    border: 1.5px #fff solid;
+    color: #fff;
+}
+
+
 /* ------------- Main - 3 ------------*/
 .main-3 {
-    display: block;
+    display: inline-block;
     width: 100%;
     height: 800px;
     color: #fff;
     background: #0E0C0A;
     background-size: cover;
     border: 2px #fff solid;
+    justify-content: center;
 }
+.main-3 .title {
+    text-align: center;
+    font-size: 25px;
+    font-family: roboto , sans-serif;
+    font-weight: 400;
+    margin: auto;
+}
+
+.main-3 .products {
+    position: relative;
+    display: grid;
+    justify-content: space-evenly;
+    align-items: center;
+    grid-template-columns: auto;
+    grid-gap: 20px;
+    background-color: grey;
+    height: 80%;
+    grid-template-areas: 
+    " p1 p2 p3"
+    "p4 p5 p6";
+    width: 80%;
+    margin: auto;
+}
+
+.main-3 .products .product-1, .product-2, .product-3, .product-4, .product-5, .product-6 {
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    background-color: #000000;
+    text-align: center;
+}
+
+
+.main-3 .products img {
+    width: 70px;
+    height: 50px;
+}
+
+.main-3 .products button {
+    border: none;
+    border-radius: 1px;
+    width: 50%;
+    height:30px;
+    font-size: 15px;
+    font-family: Roboto;
+    background: orangered;
+    color: #fff;
+    transition: 0.4s;
+}
+
+.main-3 .products button:hover {
+    background: transparent;
+    border: 1.5px #fff solid;
+    color: #fff;
+}
+
+.main-3 .products .product-1 {
+    grid-area: p1;
+}
+
+.main-3 .products .product-2 {
+    grid-area: p2;
+}
+
+.main-3 .products .product-3 {
+    grid-area: p3;
+}
+
+.main-3 .products .product-4 {
+    grid-area: p4;
+}
+
+.main-3 .products .product-5 {
+    grid-area: p5;
+}
+
+.main-3 .products .product-6 {
+    grid-area: p6;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ------------- Main - 4 ------------*/
 .main-4 {
     display: block;
