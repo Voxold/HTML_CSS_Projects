@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Protest+Guerrilla&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
 
 body {
-    display: grid;
+    display: inline-block;
     background-color: #0E0C0A;
+    justify-content: center;
+    height: 1000rem;
 }
 
 
@@ -14,6 +16,13 @@ body {
     height: 9rem;
     color: #fff;
     background-color: #000000 ;
+    border-radius: 20px;
+    position: relative;
+    top: 1rem;
+}
+
+.header:hover{
+    box-shadow: 0 0 10px orangered;
 }
 
 .header a img {
@@ -74,6 +83,12 @@ body {
     background: url(img/background.jpg);
     background-size: cover;
     border-radius: 20px;
+    position: relative;
+    top: 2rem;
+}
+
+.main-1:hover{
+    box-shadow: 0 0 10px orangered;
 }
 
 .main-1 .main-1-content {
@@ -119,18 +134,27 @@ body {
     background: transparent;
     border: 1.5px #fff solid;
     color: #fff;
+    cursor: pointer;
 }
 
 
 /* ------------- Main 2 ------------*/
 .main-2 {
-    display: block;
-    width: 100%;
+    display: inline-block;
+    position: relative;
+    top: 3rem;
+    width: 99%;
     height: 600px;
     color: #fff;
-    background: #0E0C0A;
-    border: 1.5px orangered solid;
+    background: #000000;
     border-radius: 20px;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-2:hover{
+    box-shadow: 0 0 10px orangered;
 }
 
 .main-2 .main-2-top {
@@ -147,15 +171,18 @@ body {
 .main-2 .main-2-buttom {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .main-2 .main-2-buttom img{
-    border-radius: 20px;
+    position: relative;
+    left: 1rem;
+    border-radius: 20px; 
 }
 
 .main-2 .main-2-buttom .main-2-buttom-content{
     position: relative;
-    left: 2rem;
+    left: 3rem;
 }
 
 .main-2 .main-2-buttom .main-2-buttom-content h3 {
@@ -190,6 +217,7 @@ body {
     background: transparent;
     border: 1.5px #fff solid;
     color: #fff;
+    cursor: pointer;
 }
 
 
@@ -199,10 +227,15 @@ body {
     width: 100%;
     height: 800px;
     color: #fff;
-    background: #0E0C0A;
-    border: 1.5px orangered solid;
+    background: #000000;
     border-radius: 20px;
     justify-content: center;
+    position: relative;
+    top: 4rem;
+}
+
+.main-3:hover{
+    box-shadow: 0 0 10px orangered;
 }
 
 .main-3 .title {
@@ -236,7 +269,7 @@ body {
     display: inline-block;
     width: 300px;
     height: 300px;
-    background-color: #000000;
+    background-color: #0E0C0A;
     text-align: center;
     transition: 0.4s;
     border-radius: 10px;
@@ -248,9 +281,27 @@ body {
     box-shadow: 0 0 10px orangered;
 }
 
-.main-3 .products p-h3 {
-    color: orangered;
-    margin-right: 10px;
+.products .p-h3 {
+    font-family: Roboto Slab, sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.products .p-p {
+    font-family: roboto,sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    color: #fff;
+    margin-left: 1rem;  
+}
+
+.products .p-p span {
+    font-family: roboto,sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    color: #ff0000;
+    text-decoration: line-through;
+    margin-left: 1rem;
 }
 
 .main-3 .products img {
@@ -271,6 +322,7 @@ body {
     height:30px;
     font-size: 15px;
     font-family: Roboto;
+    font-weight: 400;
     background: orangered;
     color: #fff;
     transition: 0.4s;
@@ -280,6 +332,7 @@ body {
     background: transparent;
     border: 1.5px #fff solid;
     color: #fff;
+    cursor: pointer;
 }
 
 
@@ -309,41 +362,167 @@ body {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 /* ------------- Main - 4 ------------*/
+
+
+.main-4 .title {
+    text-align: center;
+    font-size: 25px;
+    font-family: roboto , sans-serif;
+    font-weight: 400;
+    margin: auto;
+}
+
 .main-4 {
-    display: block;
+    display: inline-block;
     width: 100%;
     height: 800px;
     color: #fff;
-    background: #0E0C0A;
-    border: 1.5px orangered solid;
+    background: #000000;
     border-radius: 20px;
+    justify-content: center;
+    position: relative;
+    top: 5rem;
 }
 
-/* ------------- Footer ------------*/
+.main-4:hover{
+    box-shadow: 0 0 10px orangered;
+}
+
+.main-4 .title span{
+    color: orangered;
+}
+
+
+.main-4 .latest-products {
+    position: relative;
+    display: grid;
+    justify-content: space-evenly;
+    align-items: center;
+    grid-template-columns: auto;
+    grid-gap: 10px;
+    height: 82%;
+    grid-template-areas: 
+    " p1 p2 p3"
+    "p4 p5 p6";
+    width: 80%;
+    margin: auto;
+}
+
+.main-4 .latest-products div[class^="product-"] {
+    display: inline-block;
+    position: relative;
+    width: 350px;
+    height: 550px;
+    background-color: #0E0C0A;
+    text-align: center;
+    transition: 0.4s;
+    border-radius: 10px;
+    margin: auto;
+}
+
+.main-4 .latest-products div[class^="product-"]:hover {
+    width: 350px;
+    height: 550px;
+    box-shadow: 0 0 10px orangered;
+}
+
+.latest-products .icons{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 70px;
+    width: 60%;
+    margin: auto;
+    position: relative;
+    top: 2.5rem;
+}
+
+.latest-products .icons i {
+    font-size: 25px;
+    color: orangered;
+    transition: 0.4s;
+    cursor: pointer;
+    margin: 0; 
+}
+
+.latest-products .icons i:hover{
+    font-size: 26px;
+    color: #fff;
+    padding: 4px;
+    border: 1px #fff solid;
+}
+
+.latest-products .p-h3 {
+    font-family: Roboto Slab, sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.latest-products .p-p {
+    font-family: roboto,sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    color: #fff;
+    margin-left: 1rem;  
+}
+
+.latest-products .p-p span {
+    font-family: roboto,sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    color: #ff0000;
+    text-decoration: line-through;
+    margin-left: 1rem;
+}
+
+.main-4 .latest-products img {
+    width: 200px;
+    height: 200px;
+}
+
+.main-4 .latest-products .p-h3, .p-p, .p-b, .p-img {
+    position: relative;
+    top: 2.5rem;
+}
+
+.main-4 .latest-products button {
+    border: none;
+    border-radius: 1px;
+    width: 50%;
+    height:30px;
+    font-size: 15px;
+    font-family: Roboto;
+    font-weight: 400;
+    background: orangered;
+    color: #fff;
+    transition: 0.4s;
+}
+
+.main-4 .latest-products button:hover {
+    background: transparent;
+    border: 1.5px #fff solid;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* ------------- Main - 5 ------------*/
 .main-5 {
-    display: block;
+    display: inline-block;
     width: 100%;
     height: 800px;
     color: #fff;
     background: #0E0C0A;
     border: 1.5px orangered solid;
     border-radius: 20px;
+    justify-content: center;
+    position: relative;
+    top: 6rem;
 }
 
-
+.main-5:hover{
+    box-shadow: 0 0 10px orangered;
+}
 
 /* ------------- Footer ------------*/
 .footer {
@@ -359,6 +538,8 @@ body {
     "c c c c c"
     "c c c c c";
     align-items: center;
+    position: relative;
+    top: 7rem;
 }
 
 .footer .sociel-media {
@@ -378,6 +559,7 @@ body {
 .footer .sociel-media i:hover {
     color: orangered;
     font-size: 25px;
+    cursor: pointer;
 }
 
 .footer .footer-menu {
@@ -403,7 +585,8 @@ body {
     color: orangered;
     font-size: 18px;
     top: 0.3rem;
-    border-bottom: 1px orangered solid;   
+    border-bottom: 1px orangered solid;
+    cursor: pointer;
 }
 
 .footer .copyright {
