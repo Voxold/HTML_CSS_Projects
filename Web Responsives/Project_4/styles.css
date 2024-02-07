@@ -10,6 +10,7 @@ body {
     background: url(img/k.png) repeat;
 }
 
+
 /* ------------- Header ------------*/
 .header {
     display: flex;
@@ -81,6 +82,7 @@ body {
     font-size: 25px;
     color: orangered;
 }
+
 
 /* ------------- Main 1  ------------*/
 .main-1 {
@@ -322,7 +324,6 @@ body {
     top: 2.5rem;
 }
 
-
 .main-3 .products button {
     border: none;
     border-radius: 1px;
@@ -372,7 +373,6 @@ body {
 
 /* ------------- Main - 4 menu ------------*/
 
-
 .main-4 .title {
     text-align: center;
     font-size: 25px;
@@ -400,7 +400,6 @@ body {
 .main-4 .title span{
     color: orangered;
 }
-
 
 .main-4 .latest-products {
     position: relative;
@@ -540,7 +539,6 @@ body {
     margin: auto;
 }
 
-
 .main-5:hover{
     box-shadow: 0 0 10px orangered;
 }
@@ -548,7 +546,6 @@ body {
 .main-5 .title span{
     color: orangered;
 }
-
 
 .main-5 .cm-reviews {
     position: relative;
@@ -653,7 +650,6 @@ body {
     margin: auto;
 }
 
-
 .main-6:hover{
     box-shadow: 0 0 10px orangered;
 }
@@ -661,7 +657,6 @@ body {
 .main-6 .title span{
     color: orangered;
 }
-
 
 .main-6 .mapcontact {
     display: flex;
@@ -751,7 +746,6 @@ body {
     box-shadow: 0 0 10px orangered;
 }
 
-
 .mapcontact .contact form button {
     position: relative;
     top: 1rem;
@@ -771,15 +765,6 @@ body {
     color: #fff;
     cursor: pointer;
 }
-
-
-
-
-
-
-
-
-
 
 
 /* ------------- Footer ------------*/
