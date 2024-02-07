@@ -4,21 +4,29 @@ body {
     display: inline-block;
     background-color: #0E0C0A;
     justify-content: center;
-    height: 1000rem;
+    height: auto;
+    position: relative;
+    top: 7rem;
+    background: url(img/k.png) repeat;
 }
-
 
 /* ------------- Header ------------*/
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 9rem;
+    height: 7rem;
     color: #fff;
-    background-color: #000000 ;
+    background-color: #0E0C0A ;
     border-radius: 20px;
-    position: relative;
+    position: fixed;
     top: 1rem;
+    left: 0.7rem;
+    width: 98%;
+    z-index: 5;
+    border-bottom: 2px orangered solid;
+    border-top: 2px orangered solid;
+    transition: 0.4s;
 }
 
 .header:hover{
@@ -27,7 +35,7 @@ body {
 
 .header a img {
     position: relative;
-    left: 30px;
+    left: 2.5rem;
     width: 200px;
 }
 
@@ -46,15 +54,13 @@ body {
     font-size: 18px;
     font-family: roboto , sans-serif;
     font-weight: 400;
-    transition: 0.5s;
+    transition: 0.4s;
 }
 
 .header nav a:hover {
     position: relative;
-    bottom: 0.3rem;
-    color: orangered;
-    text-decoration: underline;
-    font-size: 20px;
+    bottom: 0.1rem;
+    color: orangered;    
 }
 
 .header .icons {
@@ -63,6 +69,8 @@ body {
 }
 
 .header .icons i {
+    position: relative;
+    right: 2.5rem;
     font-size: 30px;
     cursor: pointer;
     transition: 0.4s;
@@ -521,7 +529,7 @@ body {
     border-radius: 20px;
     justify-content: center;
     position: relative;
-    top: 5rem;
+    top: 6rem;
 }
 
 .main-5 .title {
@@ -630,7 +638,7 @@ body {
     border-radius: 20px;
     justify-content: center;
     position: relative;
-    top: 5rem;
+    top: 7rem;
 }
 
 .main-6:hover{
@@ -657,7 +665,6 @@ body {
 
 .main-6 .mapcontact {
     display: flex;
-    border: 1px orangered solid;
     width: 90%;
     height: 600px;
     justify-content: space-evenly;
@@ -675,7 +682,6 @@ body {
     background-color: #0E0C0A;
     transition: 0.4s;
     box-shadow: 0 0 10px orangered;
-    border-radius: 20px;
     border: 2px orangered solid;
 }
 
@@ -689,27 +695,28 @@ body {
 .mapcontact .map iframe:hover {
     height: 100%;
     width: 100%;
-    border-radius: 20px;
 }
 
 
 .mapcontact .contact {
-    position: relative;
     display: inline-block;
+    text-align: center;
     width: 40%;
     height: 500px;
     background-color: #0E0C0A;
+    border-radius: 20px;
     border: 1px orangered solid;
-    box-shadow: 0 0 10px orangered;
+    box-shadow: 0 0 30px orangered;
 }
 
 .mapcontact .contact h3 {
-    text-align: center;
+    position: relative;
     font-size: 25px;
     font-family: roboto , sans-serif;
     font-weight: 500;
     margin: auto;
     color: #fff;
+    top: 2rem;
 }
 
 .mapcontact .contact h3 span {
@@ -719,10 +726,52 @@ body {
 .mapcontact .contact form {
     display: inline-block;
     position: relative;
-    border: 1px orange solid;
     height: 60%;
     width: 80%;
+    top: 5rem;
 }
+
+.mapcontact .contact form input{
+    position: relative;
+    margin: 0.5rem auto;
+    width: 80%;
+    height: 3rem;
+    background: transparent;
+    border: 1px orangered solid;
+    color: #fff;
+    font-family: roboto,sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    outline: none;
+    padding-left: 15px;
+}
+
+.mapcontact .contact form input:hover {
+    border: 1px #fff solid;
+    box-shadow: 0 0 10px orangered;
+}
+
+
+.mapcontact .contact form button {
+    position: relative;
+    top: 1rem;
+    border: none;
+    border-radius: 1px;
+    width: 50%;
+    height:40px;
+    font-size: 18px;
+    font-family: Roboto, sans-serif;
+    background: orangered;
+    color: #fff;
+}
+
+.mapcontact .contact form button:hover {
+    background: transparent;
+    border: 1.5px #fff solid;
+    color: #fff;
+    cursor: pointer;
+}
+
 
 
 
@@ -748,7 +797,7 @@ body {
     "c c c c c";
     align-items: center;
     position: relative;
-    top: 7rem;
+    top: 8rem;
 }
 
 .footer .sociel-media {
